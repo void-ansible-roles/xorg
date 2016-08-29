@@ -1,0 +1,3 @@
+---
+- name: Install xorg
+  xbps: pkg=xorg state=present
