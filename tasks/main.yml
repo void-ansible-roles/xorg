@@ -1,6 +1,7 @@
 ---
-- name: Install xorg
-  xbps: pkg=xorg state=present
-
-- name: Install xinit
-  xbps: pkg=xinit state=present
+- name: Install xorg and xinit
+  xbps:
+    pkg:
+      - xorg
+      - xinit
+    state: present
